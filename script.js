@@ -1,11 +1,11 @@
 var arr=[[null,null,null],[null,null,null],[null,null,null]];
 var player=false;
 var winner;
-var won=false;
+var won=false,draw;
 var point1=0,point2=0;
 
 function doClick(id,i,j){
-    if(won){
+    if(won || draw){
         restart();
         return;
     }
@@ -43,6 +43,16 @@ function doClick(id,i,j){
     }else{
         return;
     }
+
+    draw=true;
+    for(var i=0;i<3;i++){
+        for(var j=0;j<3;j++){
+            if(arr[i][j]==null){
+                draw=false;
+            }
+        }
+    }
+
 
     if(won){
         
@@ -90,5 +100,6 @@ function restart(){
     b9.innerHTML=null;
 
     won=false;
+    draw=false;
 }
 
