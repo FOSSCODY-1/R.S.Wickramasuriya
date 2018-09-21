@@ -22,14 +22,14 @@ function doClick(id,i,j){
             
         }
 
-        for(var i=0;i<=2;i++){
+        for(var i=0;i<3;i++){
             if(arr[i][0]==player && arr[i][1]==player && arr[i][2]==player){
                 winner=player;
                 won=true;
             }
         }
 
-        for(var j=0;j<=2;j++){
+        for(var j=0;j<3;j++){
             if(arr[0][j]==player && arr[1][j]==player && arr[2][j]==player){
                 winner=player;
                 won=true;
@@ -40,15 +40,19 @@ function doClick(id,i,j){
             winner=player;
             won=true;
         }
+    }else{
+        return;
     }
 
     if(won){
-        console.log("Winner is "+winner);
+        
         if(!winner){
+            console.log("Winner is Player 1");
             point1+=1;
             var p1=document.getElementById('point1');
             p1.innerHTML=point1;
         }else{
+            console.log("Winner is Player 2");
             point2+=1;
             var p2=document.getElementById('point2');
             p2.innerHTML=point2;
@@ -61,8 +65,8 @@ function doClick(id,i,j){
 }
 
 function restart(){
-    for(i=0;i<2;i++){
-        for(j=0;j<2;j++){
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
             arr[i][j]=null;
         }
     }
