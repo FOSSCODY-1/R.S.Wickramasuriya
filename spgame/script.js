@@ -12,15 +12,9 @@ function doClick(id,i,j){
 
     if(!id.innerHTML){
 
-        if(player==0){
-            arr[i][j]=false;
-            id.innerHTML='O';
-            
-        }else{
-            arr[i][j]=true;
-            id.innerHTML='X';
-            
-        }
+        
+        arr[i][j]=false;
+        id.innerHTML='O';
 
         for(var i=0;i<3;i++){
             if(arr[i][0]==player && arr[i][1]==player && arr[i][2]==player){
@@ -40,29 +34,46 @@ function doClick(id,i,j){
             winner=player;
             won=true;
         }
-    }else{
-        return;
-    }
 
-    draw=true;
-    for(var i=0;i<3;i++){
-        for(var j=0;j<3;j++){
-            if(arr[i][j]==null){
-                draw=false;
+        player=true;
+        autof(id.innerHTML);
+        
+        for(var i=0;i<3;i++){
+            if(arr[i][0]==player && arr[i][1]==player && arr[i][2]==player){
+                winner=player;
+                won=true;
             }
         }
+
+        for(var j=0;j<3;j++){
+            if(arr[0][j]==player && arr[1][j]==player && arr[2][j]==player){
+                winner=player;
+                won=true;
+            }
+        }
+
+        if((arr[0][0]==player && arr[1][1]==player && arr[2][2]==player) || (arr[0][2]==player && arr[1][1]==player && arr[2][0]==player)){
+            winner=player;
+            won=true;
+        }
+
+
+    }
+
+    if(draw){
+        console.log("Draw");
     }
 
 
     if(won){
         
         if(!winner){
-            console.log("Winner is Player 1");
+            console.log("Player 1 won");
             point1+=1;
             var p1=document.getElementById('point1');
             p1.innerHTML=point1;
         }else{
-            console.log("Winner is Player 2");
+            console.log("Player 2 won");
             point2+=1;
             var p2=document.getElementById('point2');
             p2.innerHTML=point2;
@@ -103,3 +114,49 @@ function restart(){
     draw=false;
 }
 
+function autof(playerid){
+    var x=playerid[1];
+    var y;
+    var autoid;
+    
+    draw=true;
+    for(var i=0;i<3;i++){
+        for(var j=0;j<3;j++){
+            if(arr[i][j]==null){
+                draw=false;
+            }
+        }
+    }
+    
+    do{
+        x=Math.floor(Math.random()*9+1);
+        y="b"+x;
+        autoid=document.getElementById(y);
+        
+    }while((x==playerid[1] || autoid.innerHTML ) && !draw && !won);
+
+    if(draw || won){
+        if(won){
+            draw=false;
+        }
+        return;
+    }
+
+    var a,b;
+    if(x==1 || x==2 || x==3)
+        a=0;
+    else if(x==4 || x==5 || x==6)
+        a=1;
+    else if(x==7 || x==8 || x==9)
+        a=2;
+
+    if(x==1 || x==4 || x==7)
+        b=0;
+    else if(x==2 || x==5 || x==8)
+        b=1;
+    else if(x==3 || x==6 || x==9)
+        b=2;
+    
+    arr[Math.floor(a)][b]=true;
+    autoid.innerHTML='X';
+}
