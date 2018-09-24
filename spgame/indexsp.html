@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ThreeXO Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="../main/style.css">
+    <script src="scriptsp.js"></script>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+
+            <div id="brand">
+                <h1>Tic Tac Toe</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../spgame/indexsp.html">Singleplayer</a></li>
+                    <li><a href="../mpgame/indexmp.html">Multiplayer</a></li>
+                    <li><a>Instructions</a></li>
+                    <li><a>About</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <button id="b1" onclick="doClick(this,0,0)"></button>
+        <button id="b2" onclick="doClick(this,0,1)"></button>
+        <button id="b3" onclick="doClick(this,0,2)"></button>
+        <button id="b4" onclick="doClick(this,1,0)"></button>
+        <button id="b5" onclick="doClick(this,1,1)"></button>
+        <button id="b6" onclick="doClick(this,1,2)"></button>
+        <button id="b7" onclick="doClick(this,2,0)"></button>
+        <button id="b8" onclick="doClick(this,2,1)"></button>
+        <button id="b9" onclick="doClick(this,2,2)"></button>
+    </div>
+    <section>
+      <div>
+          <button id="restart" onclick="restart()">Restart</button>
+          <p>Player 1 : <div id="point1">0</div></p>
+          <br>
+          <p>Player 2 : <div id="point2">0</div></p>
+          <br>
+      </div>
+    </section>
+  </body>
+</html>
