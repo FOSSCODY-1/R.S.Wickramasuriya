@@ -14,6 +14,7 @@ function doClick(id,i,j){
 
         
         arr[i][j]=false;
+        id.style.color="#e2bd17";
         id.innerHTML='O';
 
         for(var i=0;i<3;i++){
@@ -158,5 +159,6 @@ function autof(playerid){
         b=2;
     
     arr[Math.floor(a)][b]=true;
+    autoid.style.color="#ffffff";
     autoid.innerHTML='X';
 }
