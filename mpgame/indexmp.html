@@ -11,12 +11,12 @@
         <div class="container">
 
             <div id="brand">
-                <h1>Tic Tac Toe</h1>
+                <h1>Tic <span class="color">Tac</span> Toe</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="../spgame/indexsp.html">Singleplayer</a></li>
-                    <li><a href="../mpgame/indexmp.html">Multiplayer</a></li>
+                    <li><a class="color" href="../mpgame/indexmp.html">Multiplayer</a></li>
                     <li><a>Instructions</a></li>
                     <li><a>About</a></li>
                 </ul>
@@ -24,28 +24,26 @@
 
         </div>
     </header>
-
-    <section>
-      <div id="wrapper">
-          <button id="b1" onclick="doClick(this,0,0)"></button>
-          <button id="b2" onclick="doClick(this,0,1)"></button>
-          <button id="b3" onclick="doClick(this,0,2)"></button>
-          <button id="b4" onclick="doClick(this,1,0)"></button>
-          <button id="b5" onclick="doClick(this,1,1)"></button>
-          <button id="b6" onclick="doClick(this,1,2)"></button>
-          <button id="b7" onclick="doClick(this,2,0)"></button>
-          <button id="b8" onclick="doClick(this,2,1)"></button>
-          <button id="b9" onclick="doClick(this,2,2)"></button>
-      </div>
-    </section>
-    <section>
-      <div>
-          <button id="restart" onclick="restart()">Restart</button>
-          <p>Player 1 : <div id="point1">0</div></p>
-          <br>
-          <p>Player 2 : <div id="point2">0</div></p>
-          <br>
-      </div>
-    </section>
+    <div class="container">
+      <section>
+        <div id="wrapper" class="container">
+            <button id="b1" onclick="doClick(this,0,0)"></button>
+            <button id="b2" onclick="doClick(this,0,1)"></button>
+            <button id="b3" onclick="doClick(this,0,2)"></button>
+            <button id="b4" onclick="doClick(this,1,0)"></button>
+            <button id="b5" onclick="doClick(this,1,1)"></button>
+            <button id="b6" onclick="doClick(this,1,2)"></button>
+            <button id="b7" onclick="doClick(this,2,0)"></button>
+            <button id="b8" onclick="doClick(this,2,1)"></button>
+            <button id="b9" onclick="doClick(this,2,2)"></button>
+        </div>
+      </section>
+      <section>
+        <div id="side">
+            <p><span class="color">Player 1 : <span id="point1">0</span></span></p>
+            <p>Player 2 : <span id="point2">0</span></p>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

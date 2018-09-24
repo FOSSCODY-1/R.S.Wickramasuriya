@@ -14,10 +14,12 @@ function doClick(id,i,j){
 
         if(player==0){
             arr[i][j]=false;
+            id.style.color="#e2bd17";
             id.innerHTML='O';
             
         }else{
             arr[i][j]=true;
+            id.style.color="#ffffff";
             id.innerHTML='X';
             
         }
@@ -53,6 +55,9 @@ function doClick(id,i,j){
         }
     }
 
+    if(draw){
+        console.log("Draw");
+    }
 
     if(won){
         
@@ -70,8 +75,7 @@ function doClick(id,i,j){
         
     }
 
-    player = !player;
-    
+    player = !player;    
 }
 
 function restart(){
