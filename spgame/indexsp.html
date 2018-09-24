@@ -39,10 +39,20 @@
         </div>
       </section>
       <section>
-        <div id="side">
-            <p><span class="color">You : <span id="point1">0</span></span></p>
-            <p>Computer : <span id="point2">0</span></p>
-        </div>
+            <div id="side">
+                <div id="sidetop">
+                  <h1 id="status"></h1>
+                    <script>
+                        var x=document.getElementById("status");
+                        x.style.color="#e2bd17";
+                        x.innerHTML="Your Turn";
+                    </script>
+                </div>
+                <div id="sidebottum">
+                  <p><span class="color">You : <span id="point1">0</span></span></p>
+                  <p>Computer : <span id="point2">0</span></p>
+                </div>
+            </div>
       </section>
     </div>
   </body>

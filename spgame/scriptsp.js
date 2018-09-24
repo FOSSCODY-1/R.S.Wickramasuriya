@@ -62,19 +62,19 @@ function doClick(id,i,j){
     }
 
     if(draw){
-        console.log("Draw");
+        document.getElementById("status").innerHTML="Draw"
     }
 
 
     if(won){
         
         if(!winner){
-            console.log("Player 1 won");
+            document.getElementById("status").innerHTML="You Won"
             point1+=1;
             var p1=document.getElementById('point1');
             p1.innerHTML=point1;
         }else{
-            console.log("Player 2 won");
+            document.getElementById("status").innerHTML="Computer Won"
             point2+=1;
             var p2=document.getElementById('point2');
             p2.innerHTML=point2;

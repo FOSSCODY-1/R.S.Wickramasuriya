@@ -7,6 +7,14 @@ var point1=0,point2=0;
 function doClick(id,i,j){
     if(won || draw){
         restart();
+        var x=document.getElementById("status");
+        if(!player){
+            x.style.color="#e2bd17";
+            x.innerHTML="Player 1's Turn";
+        }else{
+            x.style.color="#ffffff";
+            x.innerHTML="Player 2's Turn";
+        }
         return;
     }
 
@@ -42,6 +50,15 @@ function doClick(id,i,j){
             winner=player;
             won=true;
         }
+
+        var x=document.getElementById("status");
+        if(player){
+            x.style.color="#e2bd17";
+            x.innerHTML="Player 1's Turn";
+        }else{
+            x.style.color="#ffffff";
+            x.innerHTML="Player 2's Turn";
+        }
     }else{
         return;
     }
@@ -56,18 +73,23 @@ function doClick(id,i,j){
     }
 
     if(draw){
-        console.log("Draw");
+        document.getElementById("status").innerHTML="Draw"
     }
 
     if(won){
         
         if(!winner){
-            console.log("Winner is Player 1");
+            var x=document.getElementById("status");
+            x.style.color="#e2bd17";
+            x.innerHTML="Player 1 Won";
             point1+=1;
             var p1=document.getElementById('point1');
             p1.innerHTML=point1;
         }else{
-            console.log("Winner is Player 2");
+
+            var x=document.getElementById("status");
+            x.style.color="#ffffff";
+            x.innerHTML="Player 2 Won";
             point2+=1;
             var p2=document.getElementById('point2');
             p2.innerHTML=point2;
@@ -75,7 +97,7 @@ function doClick(id,i,j){
         
     }
 
-    player = !player;    
+    player = !player;
 }
 
 function restart(){
