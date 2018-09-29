@@ -1,4 +1,4 @@
-#ThreeXO#
+# ThreeXO
 
 
 
@@ -8,13 +8,13 @@ Github Username : randula05
 
 
 
-##INTRODUCTION##
+## INTRODUCTION
 
 TheeXO is a web application Which was designed based on Tic Tac Toe game.
 It was designed using HTML5, CSS3 & JavaScrcipt.
 
 
-##SCREENSHOTS##
+## SCREENSHOTS
 
 ![Singleplayer Game](main/sp.JPG)
 
