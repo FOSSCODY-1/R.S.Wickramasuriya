@@ -18,6 +18,6 @@ It was designed using HTML5, CSS3 & JavaScrcipt.
 
 SCREENSHOTS
 
-![Singleplayer Game](./main/sp.jpg)
+![Singleplayer Game](main/sp.jpg)
 
-![Multiplayer Game](./main/mp.jpg)
+![Multiplayer Game](main/mp.jpg)
