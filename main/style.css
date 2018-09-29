@@ -27,6 +27,9 @@ header a{
 header a:hover{
     color: #cccccc;
 }
+#mid #btns input:hover{
+    color: #cccccc;
+}
 header ul{
     margin: 0;
     padding: 0;
@@ -64,6 +67,9 @@ header nav{
     font-size: 50px;
     width: 150px;
     height: 150px;
+}
+#wrapper button:hover{
+    background: #232c31;
 }
 
 #side{
