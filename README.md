@@ -3,9 +3,7 @@
 
 
 Name            : R.S.Wickramasuriya
-
 Registration No : 2017/CS/193
-
 Github Username : randula05
 
 
@@ -18,6 +16,6 @@ It was designed using HTML5, CSS3 & JavaScrcipt.
 
 SCREENSHOTS
 
-![Singleplayer Game](main/sp.jpg)
+![Singleplayer Game](main/sp.JPG)
 
-![Multiplayer Game](main/mp.jpg)
+![Multiplayer Game](main/mp.JPG)
