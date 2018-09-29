@@ -101,3 +101,29 @@ header nav{
     color: #14222b;
     font-weight: bold;
 }
+
+#mid{
+    margin-left: 350px;
+    margin-top: 150px;
+}
+#play{
+    background: #e2bd17;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 4px;
+}
+#play h1{
+    font-size: 50px;
+    color: #14222b;
+    text-align: center;
+    padding-top: 15px;
+}
+#btns input{
+    background: #14222b;
+    width: 198px;
+    height: 100px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
