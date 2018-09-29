@@ -23,3 +23,8 @@ This is very much understandable and also could be easilly taken for further dev
 ![Singleplayer Game](main/sp.JPG)
 
 ![Multiplayer Game](main/mp.JPG)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
