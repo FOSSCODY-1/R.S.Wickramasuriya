@@ -18,11 +18,22 @@ ThreeXO has two modes, Singleplayer & Multiplayer.
 This is very much understandable and also could be easilly taken for further developement.
 
 
+## How to use
+
+This is a web application. Therefore this can run using a web browser.
+
+
 ## SCREENSHOTS
 
 ![Singleplayer Game](main/sp.JPG)
 
 ![Multiplayer Game](main/mp.JPG)
+
+
+## Contributions
+
+Contributions are always welcome.
+Read the CONTRIBUTING.md file.
 
 
 ## License
