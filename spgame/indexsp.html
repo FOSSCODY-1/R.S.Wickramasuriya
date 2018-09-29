@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>ThreeXO Tic-Tac-Toe</title>
     <link rel="stylesheet" href="../main/style.css">
     <script src="scriptsp.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <div class="container">
 
@@ -15,45 +17,46 @@
             </div>
             <nav>
                 <ul>
+                    <li><a href="../main/index.html">Home</a></li>
                     <li><a class="color" href="../spgame/indexsp.html">Singleplayer</a></li>
                     <li><a href="../mpgame/indexmp.html">Multiplayer</a></li>
-                    <li><a>Instructions</a></li>
-                    <li><a>About</a></li>
+                    <li><a href="../main/instructions.html">Instructions</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
     <div class="container">
-      <section>
-        <div id="wrapper" class="container">
-            <button id="b1" onclick="doClick(this,0,0)"></button>
-            <button id="b2" onclick="doClick(this,0,1)"></button>
-            <button id="b3" onclick="doClick(this,0,2)"></button>
-            <button id="b4" onclick="doClick(this,1,0)"></button>
-            <button id="b5" onclick="doClick(this,1,1)"></button>
-            <button id="b6" onclick="doClick(this,1,2)"></button>
-            <button id="b7" onclick="doClick(this,2,0)"></button>
-            <button id="b8" onclick="doClick(this,2,1)"></button>
-            <button id="b9" onclick="doClick(this,2,2)"></button>
-        </div>
-      </section>
-      <section>
+        <section>
+            <div id="wrapper" class="container">
+                <button id="b1" onclick="doClick(this,0,0)"></button>
+                <button id="b2" onclick="doClick(this,0,1)"></button>
+                <button id="b3" onclick="doClick(this,0,2)"></button>
+                <button id="b4" onclick="doClick(this,1,0)"></button>
+                <button id="b5" onclick="doClick(this,1,1)"></button>
+                <button id="b6" onclick="doClick(this,1,2)"></button>
+                <button id="b7" onclick="doClick(this,2,0)"></button>
+                <button id="b8" onclick="doClick(this,2,1)"></button>
+                <button id="b9" onclick="doClick(this,2,2)"></button>
+            </div>
+        </section>
+        <section>
             <div id="side">
                 <div id="sidetop">
-                  <h1 id="status"></h1>
+                    <h1 id="status"></h1>
                     <script>
-                        var x=document.getElementById("status");
-                        x.style.color="#e2bd17";
-                        x.innerHTML="Your Turn";
+                        var x = document.getElementById("status");
+                        x.style.color = "#e2bd17";
+                        x.innerHTML = "Your Turn";
                     </script>
                 </div>
                 <div id="sidebottum">
-                  <p><span class="color">You : <span id="point1">0</span></span></p>
-                  <p>Computer : <span id="point2">0</span></p>
+                    <p><span class="color">You : <span id="point1">0</span></span></p>
+                    <p>Computer : <span id="point2">0</span></p>
                 </div>
             </div>
-      </section>
+        </section>
     </div>
-  </body>
+</body>
+
 </html>
